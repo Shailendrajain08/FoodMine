@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { FoodService } from 'src/app/services/food.service';
 import { Food } from 'src/app/shared/models/Food';
 
@@ -11,8 +12,15 @@ export class HomeComponent {
 
   foods: Food[] = [];
 
-  constructor(private _foodService : FoodService){
-    this.foods = _foodService.getAll();
+  constructor(private _foodService : FoodService, activatedRoute: ActivatedRoute){
+    activatedRoute.params.subscribe((params) =>{
+      if(params.searchTerm){
+        this.foods = this._foodService.getAllFoodBySearchTerm(params.searchTerm);
+      }
+      else{
+        this.foods = _foodService.getAll();
+      }
+    });
   }
 
 }

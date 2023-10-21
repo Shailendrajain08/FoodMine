@@ -5,7 +5,7 @@ export const sample_foods: Food[] = [
     id:'1',
     name: 'Masala Dosa',
     cookTime: '10-20',
-    price: 10,
+    price: 70,
     favorite: false,
     origins: ['India'],
     stars: 4.5,
@@ -15,7 +15,7 @@ export const sample_foods: Food[] = [
   {
     id:'2',
     name: 'Falafal Wrap',
-    price: 20,
+    price: 150,
     cookTime: '10',
     favorite: true,
     origins: ['middle east'],
@@ -26,7 +26,7 @@ export const sample_foods: Food[] = [
   {
     id:'3',
     name: 'Veg Burger',
-    price: 10,
+    price: 80,
     cookTime: '10-15',
     favorite: false,
     origins: ['germany', 'us', 'india'],
@@ -37,7 +37,7 @@ export const sample_foods: Food[] = [
   {
     id:'4',
     name: 'Fried Potatoes',
-    price: 5,
+    price: 50,
     cookTime: '15-20',
     favorite: false,
     origins: ['belgium', 'france'],
@@ -48,7 +48,7 @@ export const sample_foods: Food[] = [
   {
     id:'5',
     name: 'Indian Thali',
-    price: 50,
+    price: 500,
     cookTime: '40-50',
     favorite: true,
     origins: ['india', 'asia'],
@@ -59,12 +59,12 @@ export const sample_foods: Food[] = [
   {
     id:'6',
     name: 'Vegetables Pizza',
-    price: 25,
+    price: 180,
     cookTime: '40-50',
     favorite: false,
     origins: ['italy'],
     stars: 4.0,
-    imageUrl: 'assets/Vegetables Pizza.jpg',
+    imageUrl: 'assets/VegPizza.jpg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
 ]
