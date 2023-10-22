@@ -6,21 +6,25 @@ import { Food } from 'src/app/shared/models/Food';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-
   foods: Food[] = [];
 
-  constructor(private _foodService : FoodService, activatedRoute: ActivatedRoute){
-    activatedRoute.params.subscribe((params) =>{
-      if(params.searchTerm){
-        this.foods = this._foodService.getAllFoodBySearchTerm(params.searchTerm);
-      }
-      else{
+  constructor(
+    private _foodService: FoodService,
+    activatedRoute: ActivatedRoute
+  ) {
+    activatedRoute.params.subscribe((params) => {
+      if (params.searchTerm) {
+        this.foods = this._foodService.getAllFoodBySearchTerm(
+          params.searchTerm
+        );
+      } else if (params.tag) {
+        this.foods = this._foodService.getAllFoodByTag(params.tag);
+      } else {
         this.foods = _foodService.getAll();
       }
     });
   }
-
 }

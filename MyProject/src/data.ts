@@ -1,8 +1,9 @@
-import {Food} from './app/shared/models/Food';
+import { Food } from './app/shared/models/Food';
+import { Tag } from './app/shared/models/Tag';
 
 export const sample_foods: Food[] = [
   {
-    id:'1',
+    id: '1',
     name: 'Masala Dosa',
     cookTime: '10-20',
     price: 70,
@@ -10,10 +11,10 @@ export const sample_foods: Food[] = [
     origins: ['India'],
     stars: 4.5,
     imageUrl: 'assets/Masala-Dosa.jpg',
-    tags: ['FastFood', 'Lunch'],
+    tags: ['FastFood', 'Lunch', 'FullMeal'],
   },
   {
-    id:'2',
+    id: '2',
     name: 'Falafal Wrap',
     price: 150,
     cookTime: '10',
@@ -21,10 +22,10 @@ export const sample_foods: Food[] = [
     origins: ['middle east'],
     stars: 4.4,
     imageUrl: 'assets/healthy-falafel.jpg',
-    tags: ['SlowFood', 'Lunch'],
+    tags: ['SlowFood', 'Lunch', 'Wrap'],
   },
   {
-    id:'3',
+    id: '3',
     name: 'Veg Burger',
     price: 80,
     cookTime: '10-15',
@@ -32,10 +33,10 @@ export const sample_foods: Food[] = [
     origins: ['germany', 'us', 'india'],
     stars: 3.5,
     imageUrl: 'assets/maccas-burger.jpg',
-    tags: ['FastFood', 'burger'],
+    tags: ['FastFood', 'Burger'],
   },
   {
-    id:'4',
+    id: '4',
     name: 'Fried Potatoes',
     price: 50,
     cookTime: '15-20',
@@ -46,7 +47,7 @@ export const sample_foods: Food[] = [
     tags: ['FastFood', 'Fry'],
   },
   {
-    id:'5',
+    id: '5',
     name: 'Indian Thali',
     price: 500,
     cookTime: '40-50',
@@ -54,10 +55,10 @@ export const sample_foods: Food[] = [
     origins: ['india', 'asia'],
     stars: 5.0,
     imageUrl: 'assets/Indian-Thali.jpg',
-    tags: ['SlowFood', 'Full Meal', 'Dinner', 'Lunch'],
+    tags: ['SlowFood', 'FullMeal', 'Dinner', 'Lunch'],
   },
   {
-    id:'6',
+    id: '6',
     name: 'Vegetables Pizza',
     price: 180,
     cookTime: '40-50',
@@ -67,4 +68,17 @@ export const sample_foods: Food[] = [
     imageUrl: 'assets/VegPizza.jpg',
     tags: ['FastFood', 'Pizza', 'Lunch'],
   },
-]
+];
+
+export const sample_tags: Tag[] = [
+  { name: 'All', count: 6 },
+  { name: 'FastFood', count: 4 },
+  { name: 'Pizza', count: 1 },
+  { name: 'Lunch', count: 4 },
+  { name: 'SlowFood', count: 2 },
+  { name: 'Burger', count: 1 },
+  { name: 'Fry', count: 1 },
+  { name: 'Wrap', count: 1 },
+  { name: 'FullMeal', count: 2 },
+  { name: 'Dinner', count: 1 },
+];
