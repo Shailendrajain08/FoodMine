@@ -59,7 +59,7 @@ export const sample_foods: Food[] = [
   },
   {
     id: '6',
-    name: 'Vegetables Pizza',
+    name: 'Vegetable Pizza',
     price: 180,
     cookTime: '40-50',
     favorite: false,
